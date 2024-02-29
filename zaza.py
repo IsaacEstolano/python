@@ -1,17 +1,6 @@
-v1=10
-v2=5
-a=0
+#1
+a=10+(20*30)
+b=4/30
+c=(9+2)*6-1
 
-#soma
-a=v1+v2
-print(f"a soma dos valores é:{a}")
-
-#subtrair
-a=v1-v2
-print(f"A subtração dos dois valores é:{a}")
-
-#dividir
-a=v1/v2
-print(f"A dividsao do dois valores é:{a}")
-
-
+print(f"\nA{a},\nB{b},\nC{c}")
