@@ -1,9 +1,9 @@
-n=0
+it=0
 positivos=0
 negativos=0
 somaPositivos=0
 contadorNegativos=0
-for n in range(20):
+for it in range(20):
     n=int(input("Digite um numero:"))
     if n>0:
         somaPositivos+=n
