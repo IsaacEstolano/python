@@ -10,11 +10,11 @@ for i in range(0,10):
 for i in range(0,10):
     print(vetorA[i])
     print(vetorB[i])
-def interseccao(a,b):
+def diff(a,b):
     conjunto_a=set(a)
     conjunto_b=set(b)
     c=conjunto_a - conjunto_b
     return c
 
-resultado=interseccao(vetorA,vetorB)
+resultado=diff(vetorA,vetorB)
 print(resultado)
