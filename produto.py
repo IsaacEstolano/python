@@ -80,18 +80,27 @@ class SistemaCadastro:
             if produto.codigo_produto == codigo:
                 op=0
                 while op != 6:
-                    op=input("Digite 1 para deletar nome,2 para preço,3 para quantidade,4 para codigo,5 para categoria e 6 se desejar sair:")
+                    op=int(input("Digite 1 para deletar nome,2 para preço,3 para quantidade,4 para codigo,5 para categoria e 6 se desejar sair:"))
                     if op==1:
                         produto.nome=None
-                    if op==2:
+                        print("Nome deletado!")
+                    elif op==2:
                         produto.preco=None
-                    if op==3:
+                        print("Preço deletado")
+                    elif op==3:
                         produto.quantidade=None
-                    if op==4:
+                        print("Quantidade do produto deletado")
+                    elif op==4:
                         produto.codigo_produto=None
-                    if op==5:
+                        print("Codigo do produto deletado")
+                    elif op==5:
                         produto.categoria=None
-                    if op==6:
+                        print("Categoria do produto deletado")
+                    elif op==6:
                         print("Produto deletado")
                         return
+                    else:
+                        print("Opçao invalida.tente novamente")
+                        
+                print("Produto nao encontrado.Verfique o codigo cadastrado")
             
